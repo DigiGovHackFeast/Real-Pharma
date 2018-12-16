@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>realPharma</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="public/img/logo.png"/>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+	<style type="text/css">
+		<style type="text/css">
+		body{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.main-content{
+			width: 100%;
+			height: 560px;
+			background-image: url(cover_plant.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.content-nav{
+			width: 1100px;
+			height: 110px;
+			margin: auto;
+
+		}
+
+		.logo-com{
+			height: 110px;
+			width: 110px;
+			position: absolute;
+		}
+
+		.con-links{
+			height: 100%;
+			width: 260px;
+			display: inline;
+
+		}
+		.con-links a{
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
+			color: white;
+			font-weight: bold;
+			font-size: 21px;
+			padding: 35px;
+			margin-left: 110px;
+			text-shadow: 1px 1px 1px #34433D;
+
+		}
+
+		.con-links a:hover{
+			border-bottom: 3px solid white;
+			padding-bottom: 4px;
+		}
+
+		.con-center{
+			width: 600px;
+			height: 220px;
+			margin: auto;
+			margin-top: 100px;
+			text-align: center;
+			border-bottom: 2px solid white;
+		}
+
+		.con-center h1{
+			font-size: 130px;
+			color: white;
+			font-family: 'Titillium Web', sans-serif;
+			text-shadow: 3px 3px 10px black;
+
+		}
+
+		.con-center h1 a{
+			text-decoration:none;
+			color: white;
+		}
+
+		.con-center h2{
+			font-size: 30px;
+			color: white;
+			text-shadow: 1px 1px 5px black;
+		}
+
+		.con-btn{
+			width: 520px;
+			height: 100px;
+			margin: auto;
+		}
+		.con-btn .btn{
+			margin: 18px;
+			box-shadow: 1px 1px 1px grey;
+			font-family: 'Rubik', sans-serif;
+			color: grey;
+		}
+
+		.footer-content{
+			height: 210px;
+			float: left;
+
+		}
+
+		.fc-1{
+			width: 60%;
+			background-color: #333333;
+		}
+
+		.fc-2{
+			width: 40%;
+			background-color: black;
+		}
+
+
+		.fc-li{
+			float: left;
+			padding: 30px;
+			color: white;
+
+
+		}
+
+		li{
+			list-style-type: none;
+			font-family: 'Rubik', sans-serif;
+			font-size: smaller;
+			padding-top: 4px;
+		}
+
+		.support{
+			display: block;
+			height: 22px;
+			width: 850px;
+			margin-top: 130px;
+			border-bottom: 0.5px solid white;
+
+		}
+
+		.pop{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-top: 6px;
+
+		}
+		p{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-left: 40px;
+			margin-top: 34px;
+		}
+
+		.fc-icon{
+			font-size: 55px;
+			padding-top: 0px;
+			padding-left: 50px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		.footer-content a:hover{
+			color: green;
+		}
+		.fc-icon p{
+			font-size: 15px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+
+		.navbar-main{
+			width: 100%;
+			height: 90px;
+			margin: auto;
+			padding-top: 15px;
+			background-color: black;
+		}
+
+		.navbar-nav{
+			margin-left: 10px;
+			margin-top: 6px;
+			font-family: 'Rubik', sans-serif;
+
+		}
+		.card-body{
+			background-color: #1B573F;
+
+		}
+
+		.user-img{
+			width: 100%;
+			height: 100px;
+
+			margin: auto;
+		}
+
+		.user-img img{
+			height: 80px;
+			width: 80px;
+		}
+		/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/medicine1.png) no-repeat center center;
+    background-size: cover;
+
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    color: #004d40;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    color: #004d40;
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #555555;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+
+
+	</style>
+
+<body>
+
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="border-bottom: #00e8d6 3px solid; opacity: 0.8" id="navbar"> -->
+	<nav class="navbar navbar-expand-sm fixed-top navbar-main" style="opacity: 0.6;" ;id="navbar"; >
+		<div class="container">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="#"><img src="../img/logo.png" class="logo-com" style="max-height: 90px; max-width: 90px"></a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item con-links">
+						<a href="/">HOME</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="/med/verify">CONSUMER</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="/register">REGISTER</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>real Pharma</h1>
+                        <h3>Real or Fake ... Check Your Medicine</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons row">
+                            <li class="col-md-6 col-sm-12">
+                                <a href="#" class="btn btn-primary btn-lg" style="width: 50%"><i class="fa fa-play fa-fw"></i> <span class="network-name">Play Store</span></a>
+                            </li>
+
+                            <li class="col-md-6 col-sm-12">
+                                <a href="/med/verify" class="btn btn-primary btn-lg" style="width: 50%"><i class="fa fa-user fa-fw"></i> <span class="network-name">Check Medicine</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

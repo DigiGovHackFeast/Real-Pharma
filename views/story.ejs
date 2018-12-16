@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>floraShot - Story</title>
+	<link rel="shortcut icon" type="image/png" href="fevicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- GOOGLE FONT    "font-family: 'Rubik', sans-serif;" -->
+		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+		<!-- GOOGLE FONT  "font-family: 'Titillium Web', sans-serif;" -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+	<title>floraShot - Story</title>
+	<link rel="shortcut icon" type="image/png" href="fevicon.png">
+	<style type="text/css">
+		<style type="text/css">
+		body{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.main-content{
+			width: 100%;
+			height: 560px;
+			background-image: url(cover_plant.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.content-nav{
+			width: 1100px;
+			height: 110px;
+			margin: auto;
+
+		}
+
+		.logo-com{
+			height: 110px;
+			width: 110px;
+		}
+
+		.con-links{
+			height: 100%;
+			width: 260px;
+			display: inline;
+
+		}
+		.con-links a{
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
+			color: white;
+			font-weight: bold;
+			font-size: 21px;
+			padding: 35px;
+			margin-left: 110px;
+			text-shadow: 1px 1px 1px #34433D;
+
+		}
+
+		.con-links a:hover{
+			border-bottom: 3px solid white;
+			padding-bottom: 4px;
+		}
+
+		.con-center{
+			width: 600px;
+			height: 220px;
+			margin: auto;
+			margin-top: 100px;
+			text-align: center;
+			border-bottom: 2px solid white;
+		}
+
+		.con-center h1{
+			font-size: 130px;
+			color: white;
+			font-family: 'Titillium Web', sans-serif;
+			text-shadow: 3px 3px 10px black;
+
+		}
+
+		.con-center h1 a{
+			text-decoration:none;
+			color: white;
+		}
+
+		.con-center h2{
+			font-size: 30px;
+			color: white;
+			text-shadow: 1px 1px 5px black;
+		}
+
+		.con-btn{
+			width: 520px;
+			height: 100px;
+			margin: auto;
+		}
+		.con-btn .btn{
+			margin: 18px;
+			box-shadow: 1px 1px 1px grey;
+			font-family: 'Rubik', sans-serif;
+			color: grey;
+		}
+
+		.footer-content{
+			height: 210px;
+			float: left;
+
+		}
+
+		.fc-1{
+			width: 60%;
+			background-color: #333333;
+		}
+
+		.fc-2{
+			width: 40%;
+			background-color: black;
+		}
+
+
+		.fc-li{
+			float: left;
+			padding: 30px;
+			color: white;
+
+
+		}
+
+		li{
+			list-style-type: none;
+			font-family: 'Rubik', sans-serif;
+			font-size: smaller;
+			padding-top: 4px;
+		}
+
+		.support{
+			display: block;
+			height: 22px;
+			width: 850px;
+			margin-top: 130px;
+			border-bottom: 0.5px solid white;
+
+		}
+
+		.pop{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-top: 6px;
+
+		}
+		p{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-left: 40px;
+			margin-top: 34px;
+		}
+
+		.fc-icon{
+			font-size: 55px;
+			padding-top: 0px;
+			padding-left: 50px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		.footer-content a:hover{
+			color: green;
+		}
+		.fc-icon p{
+			font-size: 15px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+
+		.navbar-main{
+			width: 100%;
+			height: 90px;
+			margin: auto;
+			padding-top: 15px;
+			background-color: black;
+		}
+
+		.navbar-nav{
+			margin-left: 10px;
+			margin-top: 6px;
+			font-family: 'Rubik', sans-serif;
+
+		}
+		.card-body{
+			background-color: #1B573F;
+
+		}
+
+		.user-img{
+			width: 100%;
+			height: 100px;
+
+			margin: auto;
+		}
+
+		.user-img img{
+			height: 80px;
+			width: 80px;
+		}
+
+
+
+
+
+	</style>
+
+	</style>
+</head>
+
+<body id="home" style="background:#464b51;color:#fff;">
+	<!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="border-bottom: #00e8d6 3px solid; opacity: 0.8" id="navbar"> -->
+	<nav class="navbar navbar-expand-sm fixed-top navbar-main" style="opacity: 0.6" ;id="navbar"; >
+		<div class="container">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- <a href="index.html" class="navbar-brand"><strong>forwardFIT</strong></a> -->
+			<a href="#"><img src="img/story/logo3.png" class="logo-com"></a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item con-links">
+						<a href="/">HOME</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="/story">STORYLINE</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="/register">REGISTER</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+
+	<!-- <HOME SECTION> -->
+
+	<header id="home-section" style="background-image: url(https://images.pexels.com/photos/1044320/pexels-photo-1044320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); background-size: cover;background-attachment: fixed;min-height: 620px">
+		<div class="dark-overlay" style="background-color: rgb(0,0,0,0.8); position: absolute; top:0;left: 0;width: 100%;min-height: 620px">
+			<div class="home-inner" style="padding-top: 115px">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 d-none d-lg-block">
+							<h1 class="display-4">Accept <strong>challenges</strong> and plant <strong>Trees </strong> </h1>
+
+							<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									Register yourself at FloraShot, build your profile, find connections and start planting tree whereever you want.
+									Track your progress and take snaps.
+								</div>
+							</div>
+
+						<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									Plant trees and snap the planted trees, track your location, send it to your nearby connections.
+								</div>
+							</div>
+						<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									To make the tree you have planted sustainable, complete the stage by taking snaps after given intervals, completing your level and earning points.
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-4" >
+							<div class="card bg-secondary text-center card-form style="opacity: 0.8">
+								<class class="card-body">
+									<h3 style="padding-bottom: 15px;">Sign in into floraShort</h3>
+									<div style="padding-bottom: 15px;" class="user-img">
+										<img src="img/story/user2.png">
+									</div>
+                  <form class="" action="/login" method="post">
+                    <div style="padding-bottom: 15px;" class="form-group form-row">
+                      <div class="col">
+                        <input class="form-control" type="text" name="username" placeholder="Username">
+                      </div>
+                    </div>
+                    <div style="padding-bottom: 15px;" class="form-group form-row">
+                      <div class="col">
+                        <input class="form-control" type="password" name="password" placeholder="Password">
+                      </div>
+                    </div>
+
+                  <div style="padding-bottom: 15px;" class="form-group form-row">
+                      <button class="btn btn-outline-light btn-block" type="submit" name="button">Login</button>
+                    </div>
+                  </form>
+								</class>
+							</div>
+						</div>
+
+
+						</div>
+
+						</div>
+
+					</div>
+						<div class="col-lg-4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- EXPLORE HEADER -->
+	<section id="explore-head-section"  style="background-color: #1B573F;">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="py-5">
+						<h1 class="display-4">Explore</h1>
+						<p class="lead">Tree plantation is a great activity, trees are essential to life, the very oxygen that we breathe to survive comes from these trees and most of the forest life is dependent upon it. But, despite its huge importance we people are very ignorant about the plantation of trees. We plant trees but do not take proper care of them. People cut down 15 billion trees each year. In this era there should be an initiative that aid the plantation lovers to track what they have plant so that we can increase the trees in this world.
+
+						</p>
+						<a href="/register" class="btn btn-outline-secondary">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- EXPLORE SECTION -->
+	<section class="bg-light text-muted py-5" id="explore-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/story/1.jpg" class="img-fluid mb-3 rounded-circle"></img>
+				</div>
+				<div class="col-md-6">
+					<h3>Plant and Track</h3>
+					<p>This website is targeted to every nature enthusiast who wants to take part in the plantat
+					ion drive, even the nurseries can also use this website to promote their businesses.
+					 This website can also add value to the nursery businesses running nearby, the system can
+					recommended the nearby nurseries, and charge on this service by florashot plateform.</p>
+
+							<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: #fff; background: #333; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									When you decide to plant a tree, you will be promted to take a snap of the tree you have planted through the website,
+									 after taking the snap you to name your plant.
+								</div>
+							</div>
+
+									<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: #fff; background: #333; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									The website will automatically track your location through the GPS and saves it so that at the next stage you are at the same location
+									to take the second snap of the plant.
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CHALLENGE HEADER -->
+	<section id="challenge-head-section" style="background-color: #1B573F;">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="py-5">
+						<h1 class="display-4">Scope</h1>
+						<p class="lead">This website is targeted to every nature enthusiast who wants to take part in the plantation drive, even the nurseries can also use this website to promote their businesses. This website can also add value to the nursery businesses running nearby, the system can recommended the nearby nurseries, and charge on this service by florashot plateform.</p>
+						<a class="btn btn-outline-light">Find Out More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CHALLENGE SECTION -->
+	<section class="py-5" id="challenge-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<h3>Complete the stages and Challenge your friends.</h3>
+					<p>Our purpose of the system is to ensure that every person who has planted a tree using our help should be able to track that tree, give the tree proper care and make it to the sustainable tree. Our major goal is to decrease the mortality rate of the trees planted every year and to build a community that love to take not only in the plantation drive but also likes to make sure that whatever they have planted is really going to survive.</p>
+
+							<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: white; background:black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									The very core purpose of this website is sustainability, this website have       stages when you plant a tree and forces you to upload a picture of your planted tree in every stage to ensure that the tree you have planted is sustainable. This website will also provide the exact location where the tree has been planted, to avoid any misuse of the website.
+								</div>
+							</div>
+
+									<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: white; background: black; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									The person who does not complete the stages of the tree plantation website will automatically lose the mission. This will encourage everyone to not only take part in the plantation drive but also complete the stages to make sure whatever is planted is sustained.
+								</div>
+							</div>
+				</div>
+				<div class="col-md-6">
+					<img src="https://images.pexels.com/photos/591216/pexels-photo-591216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid  mt-5 rounded-circle"></img>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- COMMUNITY HEADER -->
+	<section id="community-head-section"  style="background-color: #1B573F;">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="py-5">
+						<h1 class="display-4">Community</h1>
+						<p class="lead">There is a community called your plant buddies. The problem is tackled by designing a very interactive and user freindly website, this website will have a very good and minimalistic design to attract the users to use it, not forget to mention we will also include the social media functionality in our website so that more people use it, and can network with like-minded people..</p>
+						<a class="btn btn-outline-light out-more">Find Out More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- COMMUNITY SECTION -->
+	<section class="py-5 bg-light text-muted" id="community-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="https://www.stockvault.net/data/2011/04/06/121146/preview16.jpg" class="img-fluid  mt-5 rounded-circle"></img>
+				</div>
+				<div class="col-md-6">
+					<h3>Build streak from the community feedback.</h3>
+					<p>As with other social hub website user are competing with other user on the score or on the like so they use website more frequently or accept more challenges from their friends to use the website more, this website is also like that so build a challenge like game that whoever has planted more trees and also tracked them will have the most points. Also there will be a “create a group” option for the users to form a group so that they can chat and make a tree planting community.</p>
+
+							<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: #fff; background: #333; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									The snaps will be posted on you and yours social buddies circle, the can like or comment on your posts. You can have as many flora buddies as he or she wants, points will be given more to the people who have a greater plant buddy’s social circle.
+								</div>
+							</div>
+
+									<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-tree" style="color: #fff; background: #333; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									You can check his or her social circle by tapping on the flora buddies on the user profile page and you can send buddy request to anyone around the world to add the user in his or her plant buddy circle.
+								</div>
+							</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<div class="footer-content fc-1">
+		<div class="fc-li">
+			<ul>
+				<li><a href="#"  style="text-decoration: none; color: white;"><b>Company</b></a></li>
+				<li><a href="#"  style="text-decoration: none; color: white;">About FloraShot</li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Contact</li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="fc-li">
+			<ul>
+				<li><a href="#"  style="text-decoration: none; color: white;"><b>Community</b></li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Users</li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Support</li>
+				<li><a href="#"  style="text-decoration: none; color: white;">About Us</li>
+
+			</ul>
+		</div>
+		<div class="fc-li">
+			<ul>
+				<li><a href="#"  style="text-decoration: none; color: white;"><b>Story</b></li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Our Story</li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Images</li>
+				<li><a href="#"  style="text-decoration: none; color: white;">Trees</li>
+			</ul>
+		</div>
+		<div class="fc-li">
+			<ul>
+				<li></li>
+				<li><a href="/login"  style="text-decoration: none; color: white;">Login</li>
+				<li><a href="/register"  style="text-decoration: none; color: white;">Sign Up</li>
+				<li><a href="/"  style="text-decoration: none; color: white;">Home</li>
+			</ul>
+		</div>
+
+	<div class="support"></div>
+		<p class="pop">All Rights Reserved | FloraShot</p>
+
+	</div>
+
+
+	<div class="footer-content fc-2">
+		<p><b>Learn More</b></p>
+
+		<div class="fc-li fc-icon"><a href="https://www.google.com"><i class="fa fa-tree"></i></a><p>Blog</p></div>
+		<div class="fc-li fc-icon"><a href="https://www.google.com"><i class="fa fa-youtube"></i></a><p>YouTube</p></div>
+		<div class="fc-li fc-icon"><a href="https://www.google.com"><i class="fa fa-pinterest"></i></a><p>Pinterest</p></div>
+		<div class="fc-li fc-icon"><a href="https://www.google.com"><i class="fa fa-instagram"></i></a><p>Insta</p></div>
+	</div>
+
+
+
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"></script>
+</body>
+</html>

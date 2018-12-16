@@ -1,0 +1,75 @@
+<% include partials/header %>
+
+<h1>Add Inventory</h1>
+<div class="card bg-secondary text-center card-form" style="opacity: 0.8; width: 50%; margin:auto">
+          <class class="card-body">
+            <h2><strong>Add Inventory</strong></h2>
+            <div class="user-img">
+              <img src="../img/register/user.png">
+            </div>
+            <form action="/admin/addinventory" method="post" >
+              <div class="form-group form-row">
+                <div class="col">
+                  <label style="width:33%; color:black;font-weight: bold;">Medicine Manufactuer</label>
+                </div>
+
+              </div>
+              <div class="form-group form-row">
+
+                <div class="col">
+
+                  <select style="width:33%;" name="medicinename">
+                  <%manufacturer.forEach(function(medicine){%>
+                           <!-- <input class="form-control form-control-lg" type="text" name="licenseNumber" placeholder="License Number"> -->
+                          <option><%= medicine.name + " manufacturered " + medicine.medicinelist[0].name%></option>
+                  <%})%>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <div class="col">
+                  <label style="width:33%; color:black;font-weight: bold;">Medical Store</label>
+                </div>
+
+              </div>
+              <div class="form-group form-row">
+                <div class="col">
+                  <select style="width:33%;" name="retailername">
+                  <%retailer.forEach(function(retailer){%>
+                           <!-- <input class="form-control form-control-lg" type="text" name="licenseNumber" placeholder="License Number"> -->
+                          <option><%=retailer.name%></option>
+                  <%})%>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="form-group form-row">
+                <div class="col">
+                  <label style="width:33%; color:black;font-weight: bold;">Quantity</label>
+                </div>
+
+              </div>
+              <div class="form-group form-row">
+                <div class="col">
+                  <select style="width:33%;" class="" name="quantity">
+                    <option>50</option>
+                    <option>100</option>
+                    <option>200</option>
+                    <option>500</option>
+                    <option>1000</option>
+                  </select>
+                </div>
+
+              </div>
+                    <div class="form-group form-row">
+                <button class="btn btn-outline-light btn-block" type="submit" name="button">Add Inventory</button>
+              </div>
+
+
+
+
+
+            </form>
+          </class>
+        </div>

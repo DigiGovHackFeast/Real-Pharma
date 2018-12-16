@@ -1,0 +1,54 @@
+
+<% include partials/header %>
+
+<!-- REGISTRATION FORM GOES HERE -->
+<div class="card bg-secondary text-center card-form" style="opacity: 0.8; width: 50%; margin:auto">
+          <class class="card-body">
+            <h2><strong>Add Retailer</strong></h2>
+            <div class="user-img">
+              <img src="../img/pills.png">
+            </div>
+            <form class="" action="/admin/addretailer" method="post" >
+              <div class="form-group form-row">
+                <div class="col">
+                  <input class="form-control form-control-lg" type="text" name="name" placeholder="Name Of Retailer">
+                </div>
+
+
+              </div>
+
+              <div class="form-group form-row">
+                <div class="col">
+                           <input class="form-control form-control-lg" type="text" name="address" placeholder="Address of Bussiness">
+                </div>
+
+              </div>
+              <div class="form-group form-row">
+                <div class="col">
+                <input class="form-control form-control-lg" type="text" name="concernedperson" value="" placeholder="Concerned Person">
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <div class="col">
+                <input class="form-control form-control-lg" type="text" name="phone" value="" placeholder="Phone">
+                </div>
+                <div class="col">
+                <input class="form-control form-control-lg" type="text" name="licenseNumber" value="" placeholder="License Number">
+                </div>
+              </div>
+
+
+
+
+
+              <div class="form-group form-row">
+                <button class="btn btn-outline-light btn-block" type="submit" name="button">Add Retailer</button>
+              </div>
+
+
+
+
+
+            </form>
+          </class>
+        </div>

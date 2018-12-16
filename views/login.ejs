@@ -1,0 +1,106 @@
+<!-- <div class="container loginform">
+  <h1>Login</h1>
+  <form class="" action="/login" method="post">
+    <div class="form-group">
+      <label>Username</label>
+      <input class="form-control" type="text" name="username" placeholder="username">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input class="form-control" type="password" name="password" placeholder="password">
+    </div>
+    <p style="text-align: center;"><button style="width:40%;" class="btn btn-success">Login</button></p>
+
+  </form>
+</div> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Real Pharma - Login</title>
+	<link rel="shortcut icon" type="image/png" href="../public/img/landing/fevicon.png">
+	<meta charset="utf-8">
+	<!-- CUSTOM STYLE SHEET LINK -->
+
+	<!-- BOOTSTRAP STYLE SHEET LINK -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- SEMANTIC UI STYLE SHEET LINK -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/accordion.css">
+	<!-- GOOGLE FONT    "font-family: 'Rubik', sans-serif;" -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<!-- GOOGLE FONT  "font-family: 'Titillium Web', sans-serif;" -->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- EMBEDDED STYLE SHEET -->
+  <link rel="stylesheet" href="/stylesheets/custom.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<!-- Flash Messages -->
+	<div class="container">
+		<%if(error && error.length >0){%>
+			<div class="alert alert-danger" role="alert">
+				<%=error%>
+			</div>
+		<%}%>
+
+		<%if(success && success.length >0){%>
+			<div class="alert alert-success" role="alert">
+				<%=success%>
+			</div>
+		<%}%>
+	</div>
+
+
+	<!-- STARTING OF MAIN CONTENT -->
+	<div class="main-content">
+		<div class="content-nav">
+			<a href="#"><img src="/img/logo.png" class="logo-com"></a>
+			<div class="con-links">
+				<a href="/" class="home">HOME</a>
+				<a href="/med/verify">STORYLINE</a>
+				<a href="/register">REGISTER</a>
+			</div>
+
+			<!-- REGISTRATION FORM GOES HERE -->
+			<div class="card bg-secondary text-center card-form" style="opacity: 0.8; width: 50%; margin:auto">
+								<class class="card-body">
+									<h2><strong>Login Real Pharma</strong></h2>
+									<div class="user-img">
+										<img src="/img/register/user.png">
+									</div>
+									<form class="" action="/login" method="post">
+										<div class="form-group form-row">
+											<div class="col">
+												<input class="form-control" type="text" name="username" placeholder="Username">
+											</div>
+										</div>
+                    <div class="form-group form-row">
+											<div class="col">
+												<input class="form-control" type="password" name="password" placeholder="Password">
+											</div>
+										</div>
+
+        					<div class="form-group form-row">
+											<button class="btn btn-outline-light btn-block" type="submit" name="button">Login</button>
+											<button class="btn btn-outline-light btn-block"><a href="/register">Not A User, Register</a></button>
+										</div>
+
+
+
+
+
+
+									</form>
+								</class>
+							</div>
+
+		</div>
+
+	</div>
+
+
+<% include partials/footer%>

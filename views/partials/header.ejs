@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Real Pharma</title>
+
+    <link rel="icon" href="./public/img/landing/fevicon.png"/>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	<!-- SEMANTIC UI STYLE SHEET LINK -->
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/accordion.css">
+  	<!-- GOOGLE FONT    "font-family: 'Rubik', sans-serif;" -->
+  	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+  	<!-- GOOGLE FONT  "font-family: 'Titillium Web', sans-serif;" -->
+  	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+  	<!-- FONT AWESOME -->
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<!-- EMBEDDED STYLE SHEET -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- GOOGLE FONT    "font-family: 'Rubik', sans-serif;" -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- GOOGLE FONT  "font-family: 'Titillium Web', sans-serif;" -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+
+
+
+
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Real Pharma</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ml-auto">
+            <%if(!currentUser){%>
+            <li class="nav-item active">
+              <a class="nav-link" href="/login">Login </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/register">Signup</a>
+            </li>
+        <%}
+        else{%>
+          <li class="nav-item active">
+            <a class="nav-link" >Signed In as <%=currentUser.username%></a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+      <% }%>
+
+
+
+        </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <%if(error && error.length >0){%>
+          <div class="alert alert-danger" role="alert">
+            <%=error%>
+          </div>
+        <%}%>
+
+        <%if(success && success.length >0){%>
+          <div class="alert alert-success" role="alert">
+            <%=success%>
+          </div>
+        <%}%>
+      </div>
