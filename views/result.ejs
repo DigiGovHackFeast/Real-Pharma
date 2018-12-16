@@ -1,0 +1,12 @@
+<% include partials/header%>
+<div class="container jumbotron">
+  <h1>Results of Your Search</h1>
+
+  <p style="display:inline;">Medicine name: <%=response[0].name%></p>
+  <p style="display:inline;">Medicine Company: <%=response[0].manufacturer%></p>
+  <p style="display:inline;">Medicine hex Code: <%=response[0].hexcode%></p>
+  <p>Retailer Name: <%=response[0].retailer%></p>
+  
+  <button type="button" name="button"><a href="/med/report">Report if Something is Wrong</a></button>
+
+</div>

@@ -1,0 +1,184 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.main-content{
+  width: 100%;
+  height: 650px;
+  background-image: url(https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.content-nav{
+  width: 1100px;
+  height: 110px;
+  margin: auto;
+
+}
+
+.logo-com{
+  height: 110px;
+  width: 110px;
+}
+
+.con-links{
+  height: 100%;
+  width: 260px;
+  display: inline;
+
+}
+.con-links a{
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 35px;
+  margin-left: 110px;
+  text-shadow: 1px 1px 1px #34433D;
+
+}
+
+.con-links a:hover{
+  border-bottom: 3px solid white;
+  padding-bottom: 4px;
+}
+
+
+
+.con-center{
+  width: 600px;
+  height: 220px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.con-center h1{
+  font-size: 130px;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 3px 3px 10px black;
+
+}
+
+.con-center h1 a{
+  text-decoration:none;
+  color: white;
+}
+
+.con-center h2{
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.con-btn{
+  width: 520px;
+  height: 100px;
+  margin: auto;
+}
+.con-btn .btn{
+  margin: 18px;
+  box-shadow: 1px 1px 1px grey;
+  font-family: 'Rubik', sans-serif;
+  color: grey;
+}
+
+.footer-content{
+  height: 210px;
+  float: left;
+
+}
+
+.fc-1{
+  width: 60%;
+  background-color: #333333;
+}
+
+.fc-2{
+  width: 40%;
+  background-color: black;
+}
+
+
+.fc-li{
+  float: left;
+  padding: 30px;
+  color: white;
+
+
+}
+
+li{
+  list-style-type: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: smaller;
+  padding-top: 4px;
+}
+
+.support{
+  display: block;
+  height: 22px;
+  width: 850px;
+  margin-top: 130px;
+  border-bottom: 0.5px solid white;
+
+}
+
+.pop{
+  font-family:  'Rubik', sans-serif;
+  font-size: smaller;
+  margin-top: 6px;
+
+}
+p{
+  font-family:  'Rubik', sans-serif;
+  font-size: smaller;
+  margin-left: 40px;
+  margin-top: 34px;
+}
+
+.fc-icon{
+  font-size: 55px;
+  padding-top: 0px;
+  padding-left: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.footer-content a:hover{
+  color: green;
+}
+.fc-icon p{
+  font-size: 15px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.card-body{
+  background-color: #1B573F;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.user-img{
+  width: 100%;
+  height: 100px;
+
+  margin: auto;
+}
+
+.user-img img{
+  height: 80px;
+  width: 80px;
+}

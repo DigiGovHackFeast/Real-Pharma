@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>realPharma - Consumer</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- GOOGLE FONT    "font-family: 'Rubik', sans-serif;" -->
+		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+		<!-- GOOGLE FONT  "font-family: 'Titillium Web', sans-serif;" -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700" rel="stylesheet">
+	<title>floraShot - Story</title>
+	<link rel="shortcut icon" type="image/png" href="../img/logo.png">
+	<style type="text/css">
+		<style type="text/css">
+		body{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.main-content{
+			width: 100%;
+			height: 560px;
+			background-image: url(../img/landing/cover_plant.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.content-nav{
+			width: 1100px;
+			height: 110px;
+			margin: auto;
+
+		}
+
+		.logo-com{
+			height: 110px;
+			width: 110px;
+		}
+
+		.con-links{
+			height: 100%;
+			width: 260px;
+			display: inline;
+
+		}
+		.con-links a{
+			text-decoration: none;
+			font-family: 'Rubik', sans-serif;
+			color: white;
+			font-weight: bold;
+			font-size: 21px;
+			padding: 35px;
+			margin-left: 110px;
+			text-shadow: 1px 1px 1px #34433D;
+
+		}
+
+		.con-links a:hover{
+			border-bottom: 3px solid white;
+			padding-bottom: 4px;
+		}
+
+		.con-center{
+			width: 600px;
+			height: 220px;
+			margin: auto;
+			margin-top: 100px;
+			text-align: center;
+			border-bottom: 2px solid white;
+		}
+
+		.con-center h1{
+			font-size: 130px;
+			color: white;
+			font-family: 'Titillium Web', sans-serif;
+			text-shadow: 3px 3px 10px black;
+
+		}
+
+		.con-center h1 a{
+			text-decoration:none;
+			color: white;
+		}
+
+		.con-center h2{
+			font-size: 30px;
+			color: white;
+			text-shadow: 1px 1px 5px black;
+		}
+
+		.con-btn{
+			width: 520px;
+			height: 100px;
+			margin: auto;
+		}
+		.con-btn .btn{
+			margin: 18px;
+			box-shadow: 1px 1px 1px grey;
+			font-family: 'Rubik', sans-serif;
+			color: grey;
+		}
+
+		.footer-content{
+			height: 210px;
+			float: left;
+
+		}
+
+		.fc-1{
+			width: 60%;
+			background-color: #333333;
+		}
+
+		.fc-2{
+			width: 40%;
+			background-color: black;
+		}
+
+
+		.fc-li{
+			float: left;
+			padding: 30px;
+			color: white;
+
+
+		}
+
+		li{
+			list-style-type: none;
+			font-family: 'Rubik', sans-serif;
+			font-size: smaller;
+			padding-top: 4px;
+		}
+
+		.support{
+			display: block;
+			height: 22px;
+			width: 850px;
+			margin-top: 130px;
+			border-bottom: 0.5px solid white;
+
+		}
+
+		.pop{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-top: 6px;
+
+		}
+		p{
+			font-family:  'Rubik', sans-serif;
+			font-size: smaller;
+			margin-left: 40px;
+			margin-top: 34px;
+		}
+
+		.fc-icon{
+			font-size: 55px;
+			padding-top: 0px;
+			padding-left: 50px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		.footer-content a:hover{
+			color: green;
+		}
+		.fc-icon p{
+			font-size: 15px;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+
+		.navbar-main{
+			width: 100%;
+			height: 90px;
+			margin: auto;
+			padding-top: 15px;
+			background-color: black;
+		}
+
+		.navbar-nav{
+			margin-left: 10px;
+			margin-top: 6px;
+			font-family: 'Rubik', sans-serif;
+
+		}
+		.card-body{
+			background-color: #1B573F;
+
+		}
+
+		.user-img{
+			width: 100%;
+			height: 100px;
+
+			margin: auto;
+		}
+
+		.user-img img{
+			height: 80px;
+			width: 80px;
+		}
+
+
+
+
+
+	</style>
+
+
+</head>
+
+<body id="home" style="background:#464b51;color:#fff;">
+	<!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="border-bottom: #00e8d6 3px solid; opacity: 0.8" id="navbar"> -->
+	<nav class="navbar navbar-expand-sm fixed-top navbar-main" style="opacity: 0.6;" ;id="navbar"; >
+		<div class="container">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="#"><img src="../img/logo.png" class="logo-com" style="max-height: 90px; max-width: 90px"></a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto" >
+					<li class="nav-item con-links">
+						<a href="#">HOME</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="#">CONSUMER</a>
+					</li>
+					<li class="nav-item con-links">
+						<a href="#">REGISTER</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+	<!-- <HOME SECTION> -->
+
+	<header id="home-section" style="background-image: url(https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;background-attachment: fixed;min-height: 620px">
+		<div class="dark-overlay" style="background-color: rgb(0,0,0,0.8); position: absolute; top:0;left: 0;width: 100%;min-height: 620px">
+			<div class="home-inner" style="padding-top: 115px">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 d-none d-lg-block">
+							<h1 class="display-4">Verify <strong>the medicines</strong> you bought <strong> </strong> </h1>
+
+							<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-circle" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									Scrath the card on the medicine box that you have bought and enter the 14-digit code in the given box
+								</div>
+							</div>
+
+						<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-circle" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									Add the name of the Medicine on the Box
+								</div>
+							</div>
+						<div class="d-flex flex-row">
+								<div class="p-4 align-self-start">
+									<i class="fa fa-circle" style="color: white; background: black ; padding: 4px;border-radius: 5px; font-size: 30px; "></i>
+								</div>
+								<div class="p-4 align-self-end">
+									Finally add the Batch Number on the medicine and hit the check button to verfiy the medicine.
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-4" style="padding-top: 30px;">
+							<div class="card bg-secondary text-center card-form" style="opacity: 0.8">
+								<class class="card-body">
+									<h3>Please Enter the medicines details</h3>
+									<div class="user-img">
+										<img src="../img/pills.png">
+									</div>
+									<form action="/med/imageupload" method="post">
+										<div class="form-group">
+                      <button class="form-control-lg btn btn-light" type="button" name="button">Medicine Image
+                        <input class="t" placeholder="Profile Image" type="file" id="image" name="image" accept="image/*" required>
+                      </button>
+										</div>
+										<div class="checkbox disabled">
+
+										</div>
+										<div class="form-group">
+											<button class="btn btn-outline-light btn-block" type="submit" name="button">Check the Medicine</button>
+
+										</div>
+									</form>
+								</class>
+							</div>
+						</div>
+
+
+						</div>
+
+						</div>
+
+					</div>
+						<div class="col-lg-4"></div>
+					</div>
+
+	</header>
+
+
+
+
+</body>
+</html>
